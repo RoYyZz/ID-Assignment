@@ -3,6 +3,13 @@
     padding:0;
     font-family: sans-serif;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 0 50px;
+    
+}
 .navbar{
     color: white;
     width: 85%;
@@ -57,7 +64,6 @@
     transform: translateY(-50%);
     text-align: center;
     color:white;
-    overflow: auto;
 }
 .contents h1{
     font-size: 70px;
@@ -101,9 +107,13 @@ span{
 #features{
     width: 100%;
     padding: 70px 0px;
+    position:absolute;
+    bottom:0;
+    left: 0;
+    overflow: hidden;
 }
 .text{
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     background-color: rgb(255, 255, 255);
 }
