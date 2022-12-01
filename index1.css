@@ -191,6 +191,7 @@ span{
 
   .col{ 
     margin:auto;
+    padding: auto;
     color: wheat;
     width: 500px;
     background-color: red;
@@ -204,7 +205,7 @@ span{
   }
   .required input:after {
     content:"*"; 
-    color: red;
+    color: rgb(0, 0, 0);
   }
   
   @media screen and (max-width: 650px) {
