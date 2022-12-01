@@ -190,24 +190,44 @@ span{
   }
 
   .col{ 
-    margin:auto;
-    padding: auto;
-    color: wheat;
-    width: 500px;
-    background-color: red;
     text-align: center;
-  }
+    width: 50%;
+    padding: 10px;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+      .col {
+        width: 100%;
+      }
+    }
+
   .col h1,h2{
     color:whitesmoke;
   }
   .col p{
     color: whitesmoke;
   }
-  .required input:after {
-    content:"*"; 
-    color: rgb(0, 0, 0);
+
+  .field label {
+    display:flex;
+    flex-direction:column;
+    text-align: left;
+    color: #009688;
   }
-  
+  .field input,option,select,textarea{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: left;
+    height:20px; 
+    margin-bottom: 5px;
+  }
+
   @media screen and (max-width: 650px) {
     .column {
       width: 100%;
