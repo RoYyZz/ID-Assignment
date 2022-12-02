@@ -265,26 +265,3 @@ span{
     margin-bottom: 15px;
     padding: auto;
   }
-
-  #todaydate{
-    display:flex;
-    flex-direction:column;
-    text-align: left;
-    color: #fff;
-  }
-  #myDate{
-    display: flex;
-    width: 200px;
-    flex-direction: column;
-    justify-content: left;
-    height:25px;  
-    margin-bottom: 15px;
-    padding: auto;
-  }
-
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 50%;
-      display: block;
-    }
-  }
