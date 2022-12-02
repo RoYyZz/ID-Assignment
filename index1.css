@@ -186,14 +186,27 @@ span{
 
   .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .col{ 
+    margin-right: 150px;
+    margin-top: 70px;
     text-align: center;
-    width: 50%;
-    padding: 10px;
+    width: 60%;
+    padding: 20px;
     }
+
+  .col1{ 
+    margin-right: 30px;
+    margin-top: 70px;
+    text-align: center;
+    width: 60%;
+    padding: 20px;
+    }
+    
+
+    
     .row:after {
       content: "";
       display: table;
@@ -206,31 +219,52 @@ span{
       }
     }
 
-  .col h1,h2{
+  .col h1,h2,p{
     color:whitesmoke;
   }
-  .col p{
+
+  .col1 h3{
     color: whitesmoke;
+    justify-content: center;
+    margin-right: 100px;
+    margin-bottom: 10px;
+  }
+  #showroom{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 350px;
+    height: 350px;
+    border: 2px white solid;
   }
 
   .field label {
     display:flex;
     flex-direction:column;
     text-align: left;
-    color: #009688;
+    color: #fff;
   }
-  .field input,option,select,textarea{
+  .field input,option,select{
     display: flex;
-    width: 100%;
+    width: 400px;
     flex-direction: column;
     justify-content: left;
     height:20px; 
     margin-bottom: 5px;
   }
+  .field textarea{
+    display: flex;
+    resize: none;
+    width: 400px;
+    flex-direction: column;
+    justify-content: left;
+    height :100px;
+    margin-bottom: 5px;
+  }
 
   @media screen and (max-width: 650px) {
     .column {
-      width: 100%;
+      width: 50%;
       display: block;
     }
   }
