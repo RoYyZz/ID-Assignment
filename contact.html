@@ -8,20 +8,11 @@
         <link rel="script" href="javascript.js">
         <script src="https://kit.fontawesome.com/122871f124.js" 
         crossorigin="anonymous"></script>
-        <style>
-            body {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.5)),url('images/download.png');
-            background-repeat: no-repeat;
-            background-size:cover ;
-            background-position: center;
-            height: 100% 100%;
-            }
-        </style>
     </head>
 
     <body>
         <body>
-            <img src="images/logo.png" class="logo">
+            <a href="index1.html"><img src="images/logo.png" class="logo"></a>
             <div class = "navbar">
                 <ul>
                     <li><a href="index1.html">Home</a></li>
@@ -48,7 +39,7 @@
                             10:00am to 7:00pm (Sunday & Public Holiday)</p>
 
                         <div id="showroom">
-                            <img src="images/showroom.png" alt="Showroom">
+                            <img style='border: 2px solid white' src="images/showroom.png" width='500' height='300' alt="Showroom">
                         </div>
 
                     </div>
@@ -111,6 +102,22 @@
                         <option value="40k">$40,000</option>
                         <option value="50kup">$50,000 & above</option>
                         </select>
+                    </div>
+
+                    <div class="field">
+                        <label>Condition:</label>
+                        <select name="condition" id="condition">
+                            <option value="select">-- Please Select --</option>
+                            <option value="select">BTO (Standard Flat)</option>
+                            <option value="select">BTO (Premium Flat)</option>
+                            <option value="select">Resale</option>
+                            <option value="select">Exisiting</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label id="todaydate">Key Collection:</label>
+                        <input type="date" id="myDate" />
                     </div>
                 </div>  
             </div>
