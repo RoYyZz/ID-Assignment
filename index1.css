@@ -25,7 +25,7 @@ body{
 
 .navbar{
     color: white;
-    width: 85%;
+    max-width: 85%;
     margin-left: auto;
     padding: 30px 0;
     display: flex;
@@ -128,14 +128,6 @@ span{
     border: none;
 }
 
-#features{
-    width: 100%;
-    padding: 70px 0px;
-    position:absolute;
-    bottom:0;
-    left: 0;
-}
-
 *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -217,7 +209,7 @@ span{
   text-align: center;
   cursor: pointer;
   font-size: medium;
-  width: 100%;
+  max-width: 100%;
 }
 
 .button:hover {
@@ -260,7 +252,6 @@ span{
   margin-top: 70px;
   text-align: center;
   max-width: 700px;
-  width:700px;
   padding: 20px;
 }
   
@@ -279,7 +270,6 @@ span{
 
 .col1 h3{
   color: whitesmoke;
-  justify-content: center;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -301,29 +291,26 @@ span{
   display:flex;
   flex-direction:column;
   text-align: left;
-  margin-left: 20%;
   color: #fff;
 }
 
 .field input,option,select{
   display: flex;
-  max-width: 700px;
+  max-width: 30rem;
   width: 70%;
   flex-direction: column;
   height:25px;  
   margin-bottom: 15px;
-  margin-left:20%;
   padding: auto;
 }
 
 .field textarea{
   display: flex;
   resize: none;
-  max-width: 700px;
+  max-width: 30rem;
   width: 70%;
   flex-direction: column;
   height :100px;
-  margin-left:20%;
   margin-bottom: 15px;
   padding: auto;
 }
@@ -331,14 +318,10 @@ span{
 #submit{
   display: flex;
   padding: auto;
-  width: 50px;
+  max-width: 3.5rem;
 }
 
-@media (max-width: 800px) {
-  .f {
-    flex-direction: column;
-  }
-}
+
 
 hr{
 width:80%;
@@ -365,8 +348,7 @@ margin:0 auto;
 
 .pcolumn {
   float: left;
-  width: 50%;
-  max-width: 100%;
+  width: 100%;
 }
 
 .prow:after {
@@ -383,15 +365,8 @@ margin:0 auto;
   color:grey;
 }
 
-@media screen and (max-width: 900px) {
-  .pcolumn,
-  .col,.col1,
-  .column,.container {
-    width: 50%;
-  }
-}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .column {
     width: 100%;
   }
